@@ -1,0 +1,17 @@
+{
+  "name": "alfred-quickref",
+  "version": "1.0.0",
+  "description": "quickref",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quickref"
+  ],
+  "author": "Mofe Lee <mofe@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fuse.js": "^6.6.2"
+  }
+}
