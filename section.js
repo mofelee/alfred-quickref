@@ -57,7 +57,7 @@ const result = fuse.search(input);
 output(result.map(({ item }) => mapOutputItem(item)));
 
 function mapOutputItem(item) {
-  title = `【${TOPICKEY}${TOPICPARENTTITLE ? ` > ${TOPICPARENTTITLE}` : ""}}】${
+  title = `【${TOPICKEY}${TOPICPARENTTITLE ? ` > ${TOPICPARENTTITLE}` : ""}】${
     item.t
   } ${level === 2 ? ">" : ""}`;
 
