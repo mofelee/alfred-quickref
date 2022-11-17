@@ -57,9 +57,10 @@ const result = fuse.search(input);
 output(result.map(({ item }) => mapOutputItem(item)));
 
 function mapOutputItem(item) {
-  title = `【${TOPICKEY}${TOPICPARENTTITLE ? ` > ${TOPICPARENTTITLE}` : ""}】${
-    item.t
-  } ${level === 2 ? ">" : ""}`;
+  const prefix = `【${TOPICKEY}${
+    TOPICPARENTTITLE ? ` > ${TOPICPARENTTITLE}` : ""
+  }】`;
+  title = `${item.t} ${level === 2 ? ">" : ""}`;
 
   const mods = {};
   if (level === 2) {
@@ -80,7 +81,7 @@ function mapOutputItem(item) {
 
   return {
     title,
-    subtitle: item.t,
+    subtitle: prefix,
     arg: TOPICKEY,
     variables: {
       MODE: "openpage",

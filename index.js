@@ -4,6 +4,7 @@ let input = process.argv[2] || "";
 
 const searchData = data.map((v) => {
   v.key = v.path.replace(/docs\/(.+)\.html$/, "$1");
+  v.title = v.title.replace(/备忘清单$/, "");
   return v;
 });
 
@@ -39,8 +40,8 @@ output(result.map(({ item }) => mapOutputItem(item)));
 function mapOutputItem(item) {
   return {
     valid: true,
-    title: `【${item.key}】${item.title}`,
-    subtitle: item.intro,
+    title: `${item.title}`,
+    subtitle: `【${item.key}】${item.intro}`,
     arg: item.key,
     variables: {
       MODE: "openpage",
@@ -50,7 +51,6 @@ function mapOutputItem(item) {
     mods: {
       cmd: {
         valid: true,
-        title: `【${item.key}】${item.title}`,
         arg: item.key,
         subtitle: `检索【${item.key}】的章节`,
         variables: {
