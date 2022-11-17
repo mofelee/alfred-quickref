@@ -21,11 +21,100 @@
 				<false/>
 			</dict>
 		</array>
-		<key>AC498DBC-296D-49A8-9BC7-CDAD3E91A6F3</key>
+		<key>3508356D-D7D0-4F63-9A44-969D5DE06E85</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>742BB90A-AD1E-454D-B690-A77B1275F129</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>65B343BB-B93E-4CDB-8950-854767562E0E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B6E626E7-0B0A-4F91-A772-BF079BB3D6C4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3508356D-D7D0-4F63-9A44-969D5DE06E85</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>742BB90A-AD1E-454D-B690-A77B1275F129</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>865F1377-6962-4AE7-90F0-3B48BC182C7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>865F1377-6962-4AE7-90F0-3B48BC182C7F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B6E626E7-0B0A-4F91-A772-BF079BB3D6C4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C0F6424F-D432-4EB9-ADC7-3C8AE12458E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AC498DBC-296D-49A8-9BC7-CDAD3E91A6F3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE267A78-C0CD-425A-B9B7-7CE27D672DB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AE267A78-C0CD-425A-B9B7-7CE27D672DB9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>65B343BB-B93E-4CDB-8950-854767562E0E</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -47,6 +136,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C0F6424F-D432-4EB9-ADC7-3C8AE12458E1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Mofe Lee</string>
@@ -58,6 +160,27 @@
 	<string>QuickRef</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<true/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>http://quickref.mofe.io/{var:TOPICPATH}{var:TOPICHASH}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -98,7 +221,7 @@ node ./index.js $1</string>
 				<key>title</key>
 				<string>quickref</string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -112,44 +235,198 @@ node ./index.js $1</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:MODE}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>openpage</string>
+						<key>outputlabel</key>
+						<string>open page</string>
+						<key>uid</key>
+						<string>B6E626E7-0B0A-4F91-A772-BF079BB3D6C4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
 				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>http://quickref.mofe.io/docs/{query}.html</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</string>
+			<string>65B343BB-B93E-4CDB-8950-854767562E0E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>AE267A78-C0CD-425A-B9B7-7CE27D672DB9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>keyword</key>
-				<string>quickrefupdate</string>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>PATH=$PATH:/usr/local/bin:/usr/bin
+
+node ./section.js $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>更新quickref</string>
-				<key>text</key>
-				<string>quickrefupdate</string>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.keyword</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>23E40F37-8089-4D89-B2B2-40700D271DA6</string>
+			<string>3508356D-D7D0-4F63-9A44-969D5DE06E85</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:MODE}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>openpage</string>
+						<key>outputlabel</key>
+						<string>open page</string>
+						<key>uid</key>
+						<string>B6E626E7-0B0A-4F91-A772-BF079BB3D6C4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>865F1377-6962-4AE7-90F0-3B48BC182C7F</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>742BB90A-AD1E-454D-B690-A77B1275F129</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>PATH=$PATH:/usr/local/bin:/usr/bin
+
+node ./section.js $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C0F6424F-D432-4EB9-ADC7-3C8AE12458E1</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -180,13 +457,13 @@ node ./index.js $1</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>curl http://quickref.mofe.io/list.json &gt; list.json</string>
+				<string>curl http://quickref.mofe.io/data.json &gt; data.json</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>5</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -194,6 +471,27 @@ node ./index.js $1</string>
 			<string>B71FD0F3-E6D6-433B-88EC-1D3C3EF75E5A</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>quickrefupdate</string>
+				<key>subtext</key>
+				<string>更新quickref</string>
+				<key>text</key>
+				<string>quickrefupdate</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>23E40F37-8089-4D89-B2B2-40700D271DA6</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -203,37 +501,91 @@ node ./index.js $1</string>
 		<key>21E1931E-AEA0-4F5B-B4EA-31C7D42F21A7</key>
 		<dict>
 			<key>xpos</key>
-			<real>305</real>
+			<real>905</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>40</real>
 		</dict>
 		<key>23E40F37-8089-4D89-B2B2-40700D271DA6</key>
 		<dict>
+			<key>note</key>
+			<string>更新 data.json</string>
 			<key>xpos</key>
-			<real>115</real>
+			<real>70</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>425</real>
+		</dict>
+		<key>3508356D-D7D0-4F63-9A44-969D5DE06E85</key>
+		<dict>
+			<key>note</key>
+			<string>过滤二级目录</string>
+			<key>xpos</key>
+			<real>415</real>
+			<key>ypos</key>
+			<real>170</real>
 		</dict>
 		<key>59E47CA5-CCF6-4A55-9E37-594D77B5CA22</key>
 		<dict>
 			<key>xpos</key>
-			<real>485</real>
+			<real>440</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>425</real>
+		</dict>
+		<key>65B343BB-B93E-4CDB-8950-854767562E0E</key>
+		<dict>
+			<key>xpos</key>
+			<real>310</real>
+			<key>ypos</key>
+			<real>95</real>
+		</dict>
+		<key>742BB90A-AD1E-454D-B690-A77B1275F129</key>
+		<dict>
+			<key>note</key>
+			<string>清空arg防止arg填入三级目录的搜索框</string>
+			<key>xpos</key>
+			<real>580</real>
+			<key>ypos</key>
+			<real>200</real>
+		</dict>
+		<key>865F1377-6962-4AE7-90F0-3B48BC182C7F</key>
+		<dict>
+			<key>xpos</key>
+			<real>670</real>
+			<key>ypos</key>
+			<real>190</real>
 		</dict>
 		<key>AC498DBC-296D-49A8-9BC7-CDAD3E91A6F3</key>
 		<dict>
+			<key>note</key>
+			<string>过滤主题</string>
 			<key>xpos</key>
-			<real>115</real>
+			<real>50</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>75</real>
+		</dict>
+		<key>AE267A78-C0CD-425A-B9B7-7CE27D672DB9</key>
+		<dict>
+			<key>note</key>
+			<string>清空arg防止arg填入二级目录的搜索框</string>
+			<key>xpos</key>
+			<real>220</real>
+			<key>ypos</key>
+			<real>105</real>
 		</dict>
 		<key>B71FD0F3-E6D6-433B-88EC-1D3C3EF75E5A</key>
 		<dict>
 			<key>xpos</key>
-			<real>305</real>
+			<real>260</real>
 			<key>ypos</key>
-			<real>345</real>
+			<real>425</real>
+		</dict>
+		<key>C0F6424F-D432-4EB9-ADC7-3C8AE12458E1</key>
+		<dict>
+			<key>note</key>
+			<string>过滤三级目录</string>
+			<key>xpos</key>
+			<real>770</real>
+			<key>ypos</key>
+			<real>280</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -241,7 +593,7 @@ node ./index.js $1</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1.0</string>
+	<string>0.2.1</string>
 	<key>webaddress</key>
 	<string>http://quickref.mofe.io</string>
 </dict>
