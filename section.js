@@ -6,6 +6,7 @@ const TOPICPATH = process.env.TOPICPATH;
 const TOPICKEY = process.env.TOPICKEY;
 const TOPICLEVEL = process.env.TOPICLEVEL;
 const TOPICHASH = process.env.TOPICHASH;
+const TOPICNAME = process.env.TOPICNAME;
 const TOPICPARENTTITLE = process.env.TOPICPARENTTITLE || "";
 
 const level = parseInt(TOPICLEVEL, 10);
@@ -57,7 +58,7 @@ const result = fuse.search(input);
 output(result.map(({ item }) => mapOutputItem(item)));
 
 function mapOutputItem(item) {
-  const prefix = `【${TOPICKEY}${
+  const prefix = `【${TOPICNAME}${
     TOPICPARENTTITLE ? ` > ${TOPICPARENTTITLE}` : ""
   }】`;
   title = `${item.t} ${level === 2 ? ">" : ""}`;
@@ -68,7 +69,7 @@ function mapOutputItem(item) {
       valid: true,
       title,
       arg: TOPICKEY,
-      subtitle: `检索【${TOPICKEY} > ${item.t}】的章节`,
+      subtitle: `检索【${TOPICNAME} > ${item.t}】的章节`,
       variables: {
         MODE: "sectionsearch",
         TOPICHASH: item.a,

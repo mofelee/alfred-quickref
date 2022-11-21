@@ -4,7 +4,6 @@ let input = process.argv[2] || "";
 
 const searchData = data.map((v) => {
   v.key = v.path.replace(/docs\/(.+)\.html$/, "$1");
-  v.title = v.title.replace(/备忘清单$/, "");
   return v;
 });
 
@@ -14,20 +13,13 @@ if (input === "") {
 }
 
 const options = {
-  //includeScore: true,
+  includeScore: false,
+  shouldSort: true,
+  threshold: 0.2,
   keys: [
-    {
-      name: "key",
-      weight: 0.7,
-    },
-    {
-      name: "title",
-      weight: 0.2,
-    },
-    {
-      name: "intro",
-      weight: 0.1,
-    },
+    { name: "name", weight: 100 },
+    { name: "tags", weight: 10 },
+    { name: "intro", weight: 2 },
   ],
 };
 
@@ -40,24 +32,26 @@ output(result.map(({ item }) => mapOutputItem(item)));
 function mapOutputItem(item) {
   return {
     valid: true,
-    title: `${item.title}`,
-    subtitle: `【${item.key}】${item.intro}`,
+    title: `${item.name}`,
+    subtitle: `${item.intro}`,
     arg: item.key,
     variables: {
       MODE: "openpage",
       TOPICPATH: item.path,
       TOPICHASH: "",
+      TOPICNAME: item.name,
     },
     mods: {
       cmd: {
         valid: true,
         arg: item.key,
-        subtitle: `检索【${item.key}】的章节`,
+        subtitle: `检索【${item.name}】的章节`,
         variables: {
           MODE: "sectionsearch",
           TOPICPATH: item.path,
           TOPICLEVEL: 2,
           TOPICKEY: item.key,
+          TOPICNAME: item.name,
         },
       },
     },
