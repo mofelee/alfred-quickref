@@ -4,13 +4,6 @@
 
 快速检索[备忘清单](https://github.com/jaywcjlove/reference)
 
-注：安装前请确保 `$PATH` 或 `/usr/bin` 或 `/usr/local/bin` 中能找到 `node`
-
-<img width="267" alt="CleanShot 2022-11-21 at 20 50 59@2x" src="https://user-images.githubusercontent.com/5069410/203059825-95aadd31-8d86-4908-9bac-bd8222be0294.png">
-
-否则需要安装 nodejs 
-
-
 # 如何使用
 
 https://user-images.githubusercontent.com/5069410/202942894-68f56b80-f2b4-45ba-b921-0f0e56038cf5.mp4
