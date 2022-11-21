@@ -18,7 +18,7 @@ const options = {
   keys: [
     {
       name: "key",
-      weight: 0.6,
+      weight: 0.7,
     },
     {
       name: "title",
@@ -26,7 +26,7 @@ const options = {
     },
     {
       name: "intro",
-      weight: 0.2,
+      weight: 0.1,
     },
   ],
 };

@@ -153,7 +153,7 @@
 	<key>createdby</key>
 	<string>Mofe Lee</string>
 	<key>description</key>
-	<string></string>
+	<string>快速检索QuickRef</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -172,7 +172,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>http://quickref.mofe.io/{var:TOPICPATH}{var:TOPICHASH}</string>
+				<string>{var:BASEURL}/{var:TOPICPATH}{var:TOPICHASH}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
@@ -457,7 +457,7 @@ node ./section.js $1</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>curl http://quickref.mofe.io/data.json &gt; data.json</string>
+				<string>curl ${BASEURL}/data.json &gt; data.json</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -590,11 +590,14 @@ node ./section.js $1</string>
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
+	<key>variables</key>
+	<dict>
+		<key>BASEURL</key>
+		<string>http://quickref.mofe.io</string>
+	</dict>
 	<key>version</key>
-	<string>0.2.3</string>
+	<string>0.3.1</string>
 	<key>webaddress</key>
-	<string>http://quickref.mofe.io</string>
+	<string>https://github.com/mofelee/alfred-quickref</string>
 </dict>
 </plist>
