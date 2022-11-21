@@ -15,9 +15,10 @@ if (input === "") {
 const options = {
   includeScore: false,
   shouldSort: true,
-  threshold: 0.2,
+  threshold: 0.6,
   keys: [
     { name: "name", weight: 100 },
+    { name: "key", weight: 100 },
     { name: "tags", weight: 10 },
     { name: "intro", weight: 2 },
   ],
