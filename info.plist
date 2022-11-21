@@ -595,6 +595,8 @@ node ./section.js $1</string>
 		<key>BASEURL</key>
 		<string>http://quickref.mofe.io</string>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>0.4.4</string>
 	<key>webaddress</key>
