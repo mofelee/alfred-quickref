@@ -593,12 +593,12 @@ node ./section.js $1</string>
 	<key>variables</key>
 	<dict>
 		<key>BASEURL</key>
-		<string>http://quickref.mofe.io</string>
+		<string>https://quickref.cn</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.4.4</string>
+	<string>0.5.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/mofelee/alfred-quickref</string>
 </dict>
